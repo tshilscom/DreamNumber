@@ -5,7 +5,10 @@ randomChoice= Math.random(10);
 input=Math.floor(Math.random ()*10)
 computersChoice = Math.trunc(input);
 bg=loadImage("drawing.png")
-	}
+winbg=loadImage("dream.png")
+
+ }
+
 function draw(){
 	background(bg);
 	textSize(50)
@@ -19,33 +22,32 @@ function draw(){
 	fill(0,0,0);
 	text(computersChoice, 0,0);
 	console.log("computersChoice")
+
 	if ( computersChoice == users ){
-background(120,120,120)
+		background(winbg)
 		fill(0,255,0);
 		textSize(80);
 		textStyle(BOLD)
 		textAlign(CENTER)
 		text("you win",250,250)
 		fill(255,255,255);
-		textSize(10);
+		textSize(15);
 		textStyle(BOLD)
 		textAlign(CENTER)
-		text("Congratulations!",50,50)
+		text("Congratulations!",80,80)
 		fill(255,255,0);
 		textSize(15);
 		textStyle(BOLD)
-		//textAlign(CENTER)
-		text("Congratulations!",50,450)
+		text("Congratulations!",170,410)
 		fill(0,255,255);
 		textSize(15);
 		textStyle(BOLD)
-		//textAlign(CENTER)
-		text("Congratulations!",450,50)
+		text("Congratulations!",400,70)
 		fill(255,0,255);
 		textSize(15);
 		textStyle(BOLD)
 		textAlign(CENTER)
-		text("Congratulations!",450,450)
+		text("Congratulations!",370,460);
 
 	}
 	else if(users == ""){
@@ -56,7 +58,7 @@ background(120,120,120)
  		text("input", 250,250);
 	}
 	else{
-	if (computersChoice!=users);
+	if (computersChoice!=users );
 		fill(255,0,0);
 		textSize(20);
 		textStyle(BOLD)
@@ -68,9 +70,7 @@ background(120,120,120)
 		textAlign(CENTER)
  		text("Failed!", 220,220);
 
-		//clear();
-
-
+		
+		}
+		
 }
-}
-

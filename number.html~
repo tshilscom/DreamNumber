@@ -8,6 +8,6 @@
 </head>
 
 <body>
-<input type="text" id="user_input"/>
+<input type="text" id="user_input" maxlength="3"/>
 </body>
 </html>
